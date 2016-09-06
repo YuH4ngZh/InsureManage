@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+		"-//Hibernate/Hibernate Configuration DTD 3.0//EN"
+		"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+	<class name="model.Info" table="info">
+	<id name="Infoid" type="java.lang.Integer">
+			<column name="Infoid" length="11" />
+			<generator class="native" />
+	</id>
+	<property name = "name" type="java.lang.String">
+			<column name="name" />
+		</property>
+	<property name = "type" type="java.lang.String">
+			<column name="type" />
+		</property>
+	<property name = "price" type="java.lang.Double">
+			<column name="price" />
+		</property>	
+	<property name = "compensate" type="java.lang.Double">
+			<column name="compensate" />
+		</property>
+	<property name = "time" type="java.lang.Integer">
+			<column name="time" />
+		</property>
+	<property name = "intro" type="java.lang.String">
+			<column name="intro" />
+		</property>
+	<property name = "minage" type="java.lang.Integer">
+			<column name="minage" />
+		</property>
+	<property name = "maxage" type="java.lang.Integer">
+			<column name="maxage" />
+		</property>
+	<property name = "buyer" type="java.lang.Integer">
+			<column name="buyer" />
+		</property>	
+	</class>
+</hibernate-mapping>

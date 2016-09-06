@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+		"-//Hibernate/Hibernate Configuration DTD 3.0//EN"
+		"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+	<class name="model.Controller" table="controller">
+	<id name="controllerid" type="java.lang.Integer">
+			<column name="controllerid" length="11" />
+			<generator class="native" />
+	</id>
+	<property name = "username" type="java.lang.String">
+			<column name="username" />
+		</property>
+	<property name = "password" type="java.lang.String">
+			<column name="password" />
+		</property>	
+	<property name = "name" type="java.lang.String">
+			<column name="name" />
+		</property>
+	</class>
+</hibernate-mapping>

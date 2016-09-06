@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+		"-//Hibernate/Hibernate Configuration DTD 3.0//EN"
+		"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+	<class name="model.Contract" table="contract">
+	<id name="id" type="java.lang.Integer">
+			<column name="id" length="11" />
+			<generator class="native" />
+	</id>
+	<property name = "userid" type="java.lang.Integer">
+			<column name="userid" />
+		</property>
+	<property name = "insurename" type="java.lang.String">
+			<column name="insurename" />
+		</property>	
+	<property name = "applicant" type="java.lang.String">
+			<column name="applicant" />
+		</property>	
+		<property name = "insured" type="java.lang.String">
+			<column name="insured" />
+		</property>
+		<property name = "insuredid" type="java.lang.String">
+			<column name="insuredid" />
+		</property>
+		<property name = "mobile" type="java.lang.String">
+			<column name="mobile" />
+		</property>
+		<property name = "location" type="java.lang.String">
+			<column name="location" />
+		</property>
+		<property name = "begindate" type="java.lang.String">
+			<column name="begindate" />
+		</property>
+		<property name = "enddate" type="java.lang.String">
+			<column name="enddate" />
+		</property>
+	</class>
+</hibernate-mapping>

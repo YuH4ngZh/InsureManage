@@ -1,0 +1,95 @@
+@CHARSET "UTF-8";
+
+body {
+	margin-left: 0px;
+	margin-top: 0px;
+	margin-right: 0px;
+	margin-bottom: 0px;
+}
+P {
+	margin: 6px;
+}
+.defaulttextbox
+{
+	font-weight: bold;
+	font-size: 14pt;
+	font-family: 宋体;
+	line-height:30px;
+}
+a.default:link, a.default:visited, a.default:hover
+{
+	color: #0000ff;
+	text-decoration: none;
+	font-family: "黑体";
+	font-size: 15px;
+	font-weight: bold;
+}
+a.navlink:link, a.navlink:visited {
+	color: #F4F4F4;
+	text-decoration: none;
+	font-family: "宋体";
+	font-size: 12px;
+}
+a.navlink:hover {
+	color: white;
+	text-decoration: underline;
+	font-family: "宋体";
+	font-size: 12px;
+}
+a:link, a:visited {
+	color: "blue";
+	text-decoration: none;
+	font-family: "宋体";
+	font-size: 12px;
+}
+a:hover {
+	color: black;
+	text-decoration: underline;
+	font-family: "宋体";
+	font-size: 12px;
+}
+body,td,th {
+	font-family: 宋体;
+	font-size: 12px;
+	line-height: normal;
+}
+
+.textbox1 {
+	
+	font-family: "新宋体";
+	font-size: 12px;
+}
+.bluebox
+{
+	BORDER-RIGHT: #333333 1px solid; 
+	BORDER-TOP: #333333 1px solid; 
+	BORDER-LEFT: #333333 1px solid; 
+	BORDER-BOTTOM: #333333 1px solid; 
+	HEIGHT: 30px; 
+	BACKGROUND-COLOR: #e1eaf3;
+}
+
+td.bottomline
+{
+	border-bottom: 1px solid #999999;
+}
+.bottomline
+{
+	border-bottom: 1px solid #999999;
+}
+.textbox{
+	height: 20px; 
+	border:1px solid #003366;
+	}
+.listbox{
+	border:1px solid #003366;
+	}
+.button{
+	border:#002D96 1px solid;
+	padding:2px 0px 0px 2px;
+	cursor:hand;
+	color:#003366;
+	font:12px;
+	margin:0px 2px;
+	height:20px;
+	}

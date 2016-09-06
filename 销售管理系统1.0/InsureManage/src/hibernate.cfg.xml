@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-configuration PUBLIC
+		"-//Hibernate/Hibernate Configuration DTD 3.0//EN"
+		"http://hibernate.sourceforge.net/hibernate-configuration-3.0.dtd">
+<hibernate-configuration>
+	<session-factory>
+		<property name="connection.url">
+		<![CDATA[jdbc:mysql://localhost:3306/insuremanage?useUnicode=true&characterEncoding=utf-8]]>	
+	</property>
+	<property name="connection.username">root</property>
+	<property name="connection.password">123456</property>
+	<property name="connection.driver_class">    
+            com.mysql.jdbc.Driver     
+        </property>    
+	
+		<!--绑定映射文件 -->
+		<mapping resource="model/User.hbm.xml" />
+		<mapping resource="model/Worker.hbm.xml" /> 
+		<mapping resource="model/Controller.hbm.xml" />
+		<mapping resource="model/Info.hbm.xml" />
+		<mapping resource="model/Contract.hbm.xml" />
+		<mapping resource="model/Operation.hbm.xml" />
+	</session-factory>
+</hibernate-configuration>

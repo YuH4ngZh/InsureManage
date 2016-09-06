@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+		"-//Hibernate/Hibernate Configuration DTD 3.0//EN"
+		"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+	<class name="model.Operation" table="operation">
+		<id name="id" type="java.lang.Integer">
+			<column name="id" length="11" />
+			<generator class="native" />
+		</id>
+		<property name = "user" type="java.lang.String">
+			<column name="user" />
+		</property>
+		<property name = "date" type="java.util.Date">
+			<column name="date" />
+		</property>
+		<property name = "user_type" type="java.lang.String">
+			<column name="user_type" />
+		</property>
+		<property name = "operate_type" type="java.lang.String">
+			<column name="operate_type" />
+		</property>
+	</class>
+</hibernate-mapping>

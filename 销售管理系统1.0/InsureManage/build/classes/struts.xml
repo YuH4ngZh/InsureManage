@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE struts PUBLIC
+	"-//Apache Software Foundation//DTD Struts Configuration 2.3//EN"
+	"http://struts.apache.org/dtds/struts-2.3.dtd">
+
+<struts>
+	<constant name="struts.multipart.maxSize" value="10000000" />
+	<constant name="struts.multipart.saveDir" value="/tmp" />
+	<constant name="struts.ui.theme" value="simple" />
+	<constant name="struts.i18n.encoding" value="UTF-8" />
+	<package name="default" extends="struts-default">
+	
+		<action name="Login" class="action.LoginAction">
+			<result name="success">/index.jsp</result> 
+			<result name="input">/login.jsp</result>
+		</action>
+
+		<action name="Regist" class="action.RegistAction">
+			<result name="success">/registresult.jsp</result>
+			<result name="input">/regist.jsp</result>
+		</action>
+		
+		<action name="Cancel" class="action.CancelAction">
+			<result name="success">/cancelresult.jsp</result>
+		</action>
+		
+		<action name="Detail" class="action.DetailAction">
+			<result name="success">/detail.jsp</result>
+		</action>
+		
+		<action name="ContractMessage" class="action.ContractMessageAction">
+			<result name="success">/contractmessage.jsp</result>
+		</action>
+		
+		<action name="AddContract" class="action.AddContractAction">
+			<result name="success">/addcontractsuccess.jsp</result>
+		</action>
+		
+		<action name="DetailContract" class="action.DetailContractAction">
+			<result name="success">/detailcontract.jsp</result>
+		</action>
+		
+		<action name="BuyerDetail" class="action.BuyerDetailAction">
+			<result name="success">/manage_buyerlist.jsp</result>
+			<result name="input">/worker_buyerlist.jsp</result>
+		</action>
+		
+		<action name="ConfigUpdate" class="action.ConfigUpdateAction">
+			<result name="success">/manage_configupdate.jsp</result>
+			<result name="input">/worker_configupdate.jsp</result>
+		</action>
+		
+		<action name="AddOrUpdateConfig" class="action.AddOrUpdateConfigAction">
+			<result name="success">/manage_updateconfigresult.jsp</result>
+			<result name="input">/worker_updateconfigresult.jsp</result>
+		</action>
+		
+		<action name="ConfigDelete" class="action.ConfigDeleteAction">
+			<result name="success">/manage_config.jsp</result>
+		</action>
+		
+		<action name="WorkerDelete" class="action.WorkerDeleteAction">
+			<result name="success">/manage_worker.jsp</result>
+		</action>
+	</package>
+	
+</struts>
